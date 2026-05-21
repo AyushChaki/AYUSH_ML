@@ -9,6 +9,19 @@ expected_columns=joblib.load("columns.pkl")
 
 
 st.title("Heart Disease Prediction App")
+st.markdown("""
+### Project Description
+This machine learning web application predicts the likelihood of heart disease based on medical attributes provided by the user.
+
+### Model Information
+- Model Used: K-Nearest Neighbors (KNN)
+- Machine Learning Library: Scikit-learn
+- Data Preprocessing: StandardScaler
+- Accuracy: 86% 
+
+### GitHub Repository
+[View Source Code](https://github.com/AyushChaki/AYUSH_ML)
+""")
 st.markdown("Enter the following details to predict:")
 age=st.slider("Age", 18, 100, 40)
 sex=st.selectbox("Sex", options=["Male", "Female"])
